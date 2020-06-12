@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+@import '~antd/dist/antd.css';
+body{    background: #f0f2f5;
+}
+div#root, .project-wrap{height:100%}
+.logo {
+    padding: 21px 0 22px 0;
+    background: #f0f2f5;
+    vertical-align: top;
+    text-align: center;
+    font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ant-layout .ant-menu .ant-menu-item {
+    margin-top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.people-list-wrap .people-list .ant-list{
+    width: 100%;
+}
+.people-list-wrap .people-list .ant-list .ant-list-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.people-list-wrap .people-list .ant-list .ant-list-items .ant-list-item {
+width: 33.33%;
+box-shadow: 0 0px 1px rgba(0,0,0,0.3);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.people-list-wrap .people-list .ant-card{
+    margin: 16px 20px 0 0;
 }
 
-.App-link {
-  color: #61dafb;
+.people-list-wrap .people-list .ant-list-item a{
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.people-list-wrap .people-list .ant-list-item a .characters{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.people-list-wrap .people-list .ant-list-item a .characters h5{
+    width : 100%;
+}
+
+.people-list-wrap .people-list .ant-list-item a .characters a{
+    width: auto;
+    padding: 0 2px;
+}
+
+/* reponsive start */
+
+@media(max-width:767px){
+    .signup-wrap{
+        margin: 50px;
+    }
+    .people-list-wrap .people-list .ant-list .ant-list-items .ant-list-item {
+        width: 100%;
+        }   
 }
